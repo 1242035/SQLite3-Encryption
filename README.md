@@ -176,3 +176,15 @@ use as usual
 [wxsqlite3-docs]: https://utelle.github.io/wxsqlite3/docs/html/index.html "wxSQLite3 Docs"
 [wxsqlite3-dl]: https://github.com/utelle/wxsqlite3/releases "wxSQLite3 Download"
 [repo-dl]: https://github.com/rindeal/SQLite3-Encryption/archive/master.zip "Download repository"
+
+To build this for android
+- Download source from http://www.sqlite.org/android/vinfo?name=cf6a31d2c93f8872
+- And do follow: http://www.sqlite.org/android/doc/trunk/www/index.wiki
+- Download source from this repo
+- Copy all src/* to app/jni directory
+- Run command `cd /path/to/project/app` 
+- run /path/to/ndk/ndk-build -C .
+- All lib build at app/libs/*
+- Load in to project System.loadLibrary("sqlitex") before do anything use database
+- done
+
