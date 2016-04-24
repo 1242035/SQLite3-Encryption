@@ -187,4 +187,6 @@ To build this for android
 - All lib build at app/libs/*
 - Load in to project System.loadLibrary("sqlitex") before do anything use database
 - done
+- 
+Note: uncomment #LOCAL_CFLAGS += -DSQLITE_HAS_CODEC at jni/sqlite/Android.mk
 
